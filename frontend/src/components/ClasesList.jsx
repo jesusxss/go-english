@@ -19,8 +19,8 @@ const ClasesList = ({ clases, token, fetchClases, showError, showSuccess }) => {
     setLoading(true);
     try {
       const url = editMode 
-        ? `http://3.15.145.16:3005/materias/${formData.id}`
-        : 'http://3.15.145.16:3005/materias';
+        ? `http://172.31.8.123:3005/materias/${formData.id}`
+        : 'http://172.31.8.123:3005/materias';
       
       const method = editMode ? 'PUT' : 'POST';
       
@@ -49,7 +49,7 @@ const ClasesList = ({ clases, token, fetchClases, showError, showSuccess }) => {
     if (!window.confirm('¿Estás seguro de eliminar esta clase?')) return;
     
     try {
-      const res = await fetch(`http://3.15.145.16:3005/materias/${id}`, {
+      const res = await fetch(`http://172.31.8.123:3005/materias/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });

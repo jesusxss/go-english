@@ -163,12 +163,12 @@ const AsignacionProfesores = ({
         maxAlumnos: parseInt(form.maxAlumnos)
       };
 
-      let url = 'http://3.15.145.16:3007/asignaciones';
+      let url = 'http://172.31.8.123:3007/asignaciones';
       let method = 'POST';
       
       // Si estamos editando, usar PUT y agregar el ID
       if (editIndex !== null && editId) {
-        url = `http://3.15.145.16:3007/asignaciones/${editId}`;
+        url = `http://172.31.8.123:3007/asignaciones/${editId}`;
         method = 'PUT';
       }
 
@@ -268,7 +268,7 @@ const AsignacionProfesores = ({
     setMensaje('');
     
     try {
-      const res = await fetch(`http://3.15.145.16:3006/asignaciones/${asignacion.id}`, { 
+      const res = await fetch(`http://172.31.8.123:3006/asignaciones/${asignacion.id}`, { 
         method: 'DELETE',
         headers: {
           'Authorization': token ? `Bearer ${token}` : ''

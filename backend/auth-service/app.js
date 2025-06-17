@@ -43,4 +43,4 @@ app.post('/login', (req, res) => {
   });
 });
 
-app.listen(3001, () => console.log('Auth Service corriendo en http://3.15.145.16:3001'));
+app.listen(3001, () => console.log('Auth Service corriendo en http://172.31.8.123:3001'));

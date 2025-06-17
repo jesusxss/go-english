@@ -41,7 +41,7 @@ const AsignacionEstudiantes = ({ usuarios, profesores, token, showError, showSuc
   const fetchCursosProfesores = async () => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL || 'http://3.15.145.16:3007'}/cursos-con-profesor`,
+        `${process.env.REACT_APP_API_URL || 'http://172.31.8.123:3007'}/cursos-con-profesor`,
         {
           headers: { Authorization: `Bearer ${token}` }
         }
@@ -98,7 +98,7 @@ const AsignacionEstudiantes = ({ usuarios, profesores, token, showError, showSuc
       };
 
       await axios.post(
-        'http://3.15.145.16:3009/api/asignaciones-curso',
+        'http://172.31.8.123:3009/api/asignaciones-curso',
         payload
       );
 

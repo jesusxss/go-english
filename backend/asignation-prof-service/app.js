@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 app.use(cors({
-  origin: 'http://3.15.145.16:3000',
+  origin: 'http://172.31.8.123:3000',
   methods: ['GET','POST','PUT','DELETE'],
   allowedHeaders: ['Content-Type','Authorization'],
   credentials: true
@@ -177,4 +177,4 @@ app.use((req, res, next) => {
   next();
 });
 
-app.listen(3008, () => console.log('API de Asignaciones con JWT corriendo en http://3.15.145.16:3008'));
+app.listen(3008, () => console.log('API de Asignaciones con JWT corriendo en http://172.31.8.123:3008'));

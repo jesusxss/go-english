@@ -19,8 +19,8 @@ const UsuariosList = ({ usuarios, token, fetchUsuarios, showError, showSuccess }
     setLoading(true);
     try {
       const url = editMode 
-        ? `http://3.15.145.16:3002/usuarios/${formData.id}`
-        : 'http://3.15.145.16:3002/usuarios';
+        ? `http://172.31.8.123:3002/usuarios/${formData.id}`
+        : 'http://172.31.8.123:3002/usuarios';
       
       const method = editMode ? 'PUT' : 'POST';
       
@@ -53,7 +53,7 @@ const UsuariosList = ({ usuarios, token, fetchUsuarios, showError, showSuccess }
     if (!window.confirm('¿Estás seguro de eliminar este usuario?')) return;
     
     try {
-      const res = await fetch(`http://3.15.145.16:3002/usuarios/${id}`, {
+      const res = await fetch(`http://172.31.8.123:3002/usuarios/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });

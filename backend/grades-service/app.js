@@ -110,4 +110,4 @@ app.delete('/calificaciones/:id', authMiddleware(['administrativo']), (req, res)
   });
 });
 
-app.listen(3004, () => console.log('Grades Service running on http://3.15.145.16:3004'));
+app.listen(3004, () => console.log('Grades Service running on http://172.31.8.123:3004'));

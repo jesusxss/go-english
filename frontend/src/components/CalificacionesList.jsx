@@ -23,8 +23,8 @@ const CalificacionesList = ({ calificaciones, usuarios, clases, token, fetchCali
     setLoading(true);
     try {
       const url = editMode 
-        ? `http://3.15.145.16:3004/calificaciones/${formData.id}`
-        : 'http://3.15.145.16:3004/calificaciones';
+        ? `http://172.31.8.123:3004/calificaciones/${formData.id}`
+        : 'http://172.31.8.123:3004/calificaciones';
       
       const method = editMode ? 'PUT' : 'POST';
       

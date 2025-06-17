@@ -58,4 +58,4 @@ app.post('/api/asignaciones-curso', (req, res) => {
   );
 });
 
-app.listen(3009, () => console.log('API de Asignaciones con JWT corriendo en http://3.15.145.16:3009'));
+app.listen(3009, () => console.log('API de Asignaciones con JWT corriendo en http://172.31.8.123:3009'));

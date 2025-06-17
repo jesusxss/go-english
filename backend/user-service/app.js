@@ -143,4 +143,4 @@ app.delete('/usuarios/:id', authMiddleware(['administrativo']), (req, res) => {
   });
 });
 
-app.listen(3002, () => console.log('User Service corriendo en http://3.15.145.16:3002'));
+app.listen(3002, () => console.log('User Service corriendo en http://172.31.8.123:3002'));

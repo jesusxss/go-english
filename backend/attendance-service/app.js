@@ -110,4 +110,4 @@ app.delete('/asistencias/:id', authMiddleware(['administrativo']), (req, res) =>
   });
 });
 
-app.listen(3003, () => console.log('Attendance Service running on http://3.15.145.16:3003'));
+app.listen(3003, () => console.log('Attendance Service running on http://172.31.8.123:3003'));

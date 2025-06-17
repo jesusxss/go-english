@@ -91,4 +91,4 @@ app.delete('/materias/:id', authMiddleware(['administrativo']), (req, res) => {
   });
 });
 
-app.listen(3005, () => console.log('Classes Service running on http://3.15.145.16:3005'));
+app.listen(3005, () => console.log('Classes Service running on http://172.31.8.123:3005'));

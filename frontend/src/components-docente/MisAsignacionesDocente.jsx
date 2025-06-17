@@ -82,7 +82,7 @@ const MisAsignacionesDocente = ({
     
     setLoading(true);
     try {
-      const response = await axios.get('http://3.15.145.16:3007/asignaciones', {
+      const response = await axios.get('http://172.31.8.123:3007/asignaciones', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       
